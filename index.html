@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="main.js"></script>
+    <title>Resume</title>
+</head>
+<body>
+
+    <form>
+        <select class="lang-selector" id="language-switch">
+            <option value="en" selected>Eng</option>
+            <option value="fa">Fa</option>
+        </select>
+    </form>
+    
+    <header language="en">
+        <nav>
+            <button class="menu-burger-icon" onclick="showMenu()"><i class="fa fa-bars"></i></button>
+            <ul class="header-menu" id="nav-menu">
+                <li class="header-menu-item first-header-menu-item"><a href="">Home</a></li>
+                <li class="header-menu-item"><a href="#about-go">About</a></li>
+                <li class="header-menu-item"><a href="#knowledge-go">Knowledge</a></li>
+                <li class="header-menu-item"><a href="#project-go">Project</a></li>
+                <li class="header-menu-item"><a href="#request-go">Request</a></li>
+            </ul>
+        </nav>
+
+        <section class="banner">
+            <section class="banner-title">
+                <h2>Ali Ahmadi Yekta</h2>
+                <p>A Frontend Student Trying To Learn A Lot Of Things...</p>
+            </section>
+            <div class="banner-img"></div>
+        </section>
+    </header>
+    <!-- persian version -->
+    <header language="fa" class="perLang" dir="rtl">
+        <nav>
+            <button class="menu-burger-icon" onclick="showMenu()"><i class="fa fa-bars"></i></button>
+            <ul class="header-menu" id="nav-menu">
+                <li class="header-menu-item first-header-menu-item"><a href="">خانه</a></li>
+                <li class="header-menu-item"><a href="#about-go">درباره</a></li>
+                <li class="header-menu-item"><a href="#knowledge-go">دانش</a></li>
+                <li class="header-menu-item"><a href="#project-go">پروژه</a></li>
+                <li class="header-menu-item"><a href="#request-go">درخواست کار</a></li>
+            </ul>
+        </nav>
+
+        <section class="banner">
+            <section class="banner-title">
+                <h2>علی احمدی یکتا</h2>
+                <p>دانشجوی فرانتند, در تلاش برای یادگیری چیز های بسیار زیاد . . .</p>
+            </section>
+            <div class="banner-img"></div>
+        </section>
+    </header>
+
+    <main language="en">
+        <section class="about-sect" id="about-go">
+            <h3 class="sect-title">About</h3>
+            <ul class="about-menu">
+                <li><i class="fa fa-user"></i> I'm Ali Yekta</li>
+                <li><i class="fa fa-folder-open"></i> I'm a frontend student</li>
+                <li><i class="fa fa-map-marker"></i> I'm an Iranian</li>
+                <li><i class="fa fa-birthday-cake"></i> I was born in 2006/12/26</li>
+            </ul>
+        </section>
+
+        <section class="knowledge-sect" id="knowledge-go">
+            <h3 class="sect-title m-4">Knowledge</h3>
+            <section class="knowledge-box-container d-flex flex-wrap justify-content-center align-items-center">
+                <div class="box box1 col-lg-3 col-md-4 col-sm-5 col-xs-12">
+                    <h4>HTML & CSS</h4>
+                    <p class="text-muted">flex-box, css-grid, professional css user</p>
+                </div>
+                <div class="box box2 col-lg-3 col-md-4 col-sm-5 col-xs-12">
+                    <h4>JavaScript</h4>
+                    <p class="text-muted">improve my projects with that</p>
+                </div>
+                <div class="box box3 col-lg-3 col-md-4 col-sm-5 col-xs-12">
+                    <h4>Bootstrap</h4>
+                    <p class="text-muted">can work faster with that</p>
+                </div>
+            </section>
+
+            <section class="progress-container">
+                <label class="mt-4">HTML & CSS :</label>
+                <div class="progress" id="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                </div>
+                <label class="mt-4">JavaScript :</label>
+                <div class="progress" id="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                </div>
+                <label class="mt-4">Bootstrap :</label>
+                <div class="progress" id="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 86%"></div>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="project-sect d-flex flex-column align-items-center" id="project-go">
+            <h3 class="sect-title m-4">Projects</h3>
+            <div class="projects-container d-flex justify-content-center  align-items-center flex-wrap p-5">
+                <div class="card border border-secondary m-4" style="width: 18rem;">
+                <div class="card-img-bg card-img-bg1"></div>
+                <div class="card-body">
+                  <h5 class="card-title">Hitler Research</h5>
+                  <a href="https://ali-magic.github.io/hitler/index.html" class="btn" target="_blank">Visit</a>
+                </div>
+                </div>
+
+                <div class="card border border-secondary m-4" style="width: 18rem;">
+                <div class="card-img-bg card-img-bg2"></div>
+                <div class="card-body">
+                  <h5 class="card-title">Travelo</h5>
+                  <a href="https://ali-magic.github.io/travelo/index.html" class="btn" target="_blank">Visit</a>
+                </div>
+                </div>
+
+                <div class="card border border-secondary m-4" style="width: 18rem;">
+                <div class="card-img-bg card-img-bg3"></div>
+                <div class="card-body">
+                  <h5 class="card-title">News Bit</h5>
+                  <a href="https://ali-magic.github.io/newsbit/index.html" class="btn" target="_blank">Visit</a>
+                </div>
+                </div>
+
+                <div class="card border border-secondary m-4" style="width: 18rem;">
+                <div class="card-img-bg card-img-bg4"></div>
+                <div class="card-body">
+                  <h5 class="card-title">Special Card</h5>
+                  <a href="https://ali-magic.github.io/special-card/index.html" class="btn" target="_blank">Visit</a>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="request-sect d-flex justify-content-center" id="request-go">
+            <div class="request-box">
+                <div class="request-header">
+                    <h3>Request</h3>
+                </div>
+                <div class="request-content d-flex justify-content-between">
+                    <p class="w-75">
+                        if you want to order a website, you can request from here. you just need to tell me details and options you want. if you didn't received any message after requesting you can <span onclick="alert('alimagicinvet@gmail.com')">contact</span> me...
+                    </p>
+                    <button onclick="alert('coming soon option :)')">Request</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- persian version -->
+    <main language="fa" class="perLang">
+        <section class="about-sect" id="about-go">
+            <h3 class="sect-title">درباره</h3>
+            <ul class="about-menu">
+                <li><i class="fa fa-user"></i> من علی احمدی یکتا هستم</li>
+                <li><i class="fa fa-folder-open"></i> دانشجوی فرانتند هستم</li>
+                <li><i class="fa fa-map-marker"></i> یک ایرانی</li>
+                <li><i class="fa fa-birthday-cake"></i> متولد 1385/10/5</li>
+            </ul>
+        </section>
+
+        <section class="knowledge-sect" id="knowledge-go">
+            <h3 class="sect-title m-4">دانش</h3>
+            <section class="knowledge-box-container d-flex flex-wrap justify-content-center align-items-center">
+                <div class="box box1 col-lg-3 col-md-4 col-sm-5 col-xs-12">
+                    <h4>HTML & CSS</h4>
+                    <p class="text-muted">flex-box, css-grid, کاربر حرفه ای css</p>
+                </div>
+                <div class="box box2 col-lg-3 col-md-4 col-sm-5 col-xs-12">
+                    <h4>جاوا اسکریپت</h4>
+                    <p class="text-muted">تقویت پروژه با جاوااسکریپت</p>
+                </div>
+                <div class="box box3 col-lg-3 col-md-4 col-sm-5 col-xs-12">
+                    <h4>بوت استرپ</h4>
+                    <p class="text-muted">افزایش سرعت با بوت استرپ</p>
+                </div>
+            </section>
+
+            <section class="progress-container">
+                <label class="mt-4">HTML & CSS :</label>
+                <div class="progress" id="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                </div>
+                <label class="mt-4">جاوااسکریپت :</label>
+                <div class="progress" id="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                </div>
+                <label class="mt-4">بوت استرپ :</label>
+                <div class="progress" id="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 86%"></div>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="project-sect d-flex flex-column align-items-center" id="project-go">
+            <h3 class="sect-title m-4">پروژه ها</h3>
+            <div class="projects-container d-flex justify-content-center  align-items-center flex-wrap p-5">
+                <div class="card border border-secondary m-4" style="width: 18rem;">
+                <div class="card-img-bg card-img-bg1"></div>
+                <div class="card-body">
+                  <h5 class="card-title">تحقیق هیتلر</h5>
+                  <a href="https://ali-magic.github.io/hitler/index.html" class="btn" target="_blank">بازدید</a>
+                </div>
+                </div>
+
+                <div class="card border border-secondary m-4" style="width: 18rem;">
+                <div class="card-img-bg card-img-bg2"></div>
+                <div class="card-body">
+                  <h5 class="card-title">Travelo</h5>
+                  <a href="https://ali-magic.github.io/travelo/index.html" class="btn" target="_blank">بازدید</a>
+                </div>
+                </div>
+
+                <div class="card border border-secondary m-4" style="width: 18rem;">
+                <div class="card-img-bg card-img-bg3"></div>
+                <div class="card-body">
+                  <h5 class="card-title">بیت نیوز</h5>
+                  <a href="https://ali-magic.github.io/newsbit/index.html" class="btn" target="_blank">بازدید</a>
+                </div>
+                </div>
+
+                <div class="card border border-secondary m-4" style="width: 18rem;">
+                <div class="card-img-bg card-img-bg4"></div>
+                <div class="card-body">
+                  <h5 class="card-title">کارت مخصوص</h5>
+                  <a href="https://ali-magic.github.io/special-card/index.html" class="btn" target="_blank">بازدید</a>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="request-sect d-flex justify-content-center" id="request-go">
+            <div class="request-box">
+                <div class="request-header">
+                    <h3 class="text-right">درخواست کار</h3>
+                </div>
+                <div class="request-content d-flex justify-content-between" dir="rtl">
+                    <p class="w-75 text-right">
+                      در این قسمت شما می توانید که به درخواستی به من ارسال کنید و مشخصات سایت مورد نظرتان را برای من ارسال کنید , اگر که بعد از ارسال پیامتان کسی با شما تماس برقرار نکرد به من<span onclick="alert('alimagicinvet@gmail.com')"> ایمیل</span> بده
+                    </p>
+                    <button onclick="alert('این قابلیت به زودی خواهد آمد:)')">درخواست</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-100" language="en">
+        <section class="app footer-bg m-auto">
+            <section class="footer-content d-flex flex-wrap justify-content-between  footer-row">
+                <div class="footer-col">
+                    <img src="img/logo.png" alt="logo" class="logo">
+                    <p class="first-footer-col-p">you can download the image file of this resume by just clickig <a href="img/full-site.png" download="aay-resume" title="download">'here'</a>, if the image is not upadated, contact me</p>
+                    <br>
+                    <p class="first-footer-col-p">Copyright ©2023 All rights reserved | This template is made by <a href="https://github.com/ALI-MAGIC" class="text-light" target="_blank">"Ali-Magic"</a></p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>indeterminacy</h3>
+                    <section>
+                        <h5>wanna work together?</h5>
+                        <p>send me an email</p>
+                    </section>
+                    <div class="line w-100"></div>
+                    <section>
+                        <h5>saw a problem in the website?</h5>
+                        <p>send me an email</p>
+                    </section>
+                </div>
+
+                <div class="footer-col">
+                    <h3>history of this site</h3>
+                    <section>
+                        <h5>created</h5>
+                        <p>2023/12/27</p>
+                    </section>
+                    <div class="line w-100"></div>
+                    <section>
+                        <h5>updated</h5>
+                        <p>2023/12/27</p>
+                    </section>
+                </div>
+
+            <div class="line w-100"></div>
+
+            </section>
+
+            <nav class="footer-nav d-flex justify-content-between align-items-center  footer-row">
+                <ul class="footer-menu">
+                    <li>Terms & Condition</li>
+                    <li>Privacy policy</li>
+                    <li>Jobs advertising</li>
+                    <li>Contact us</li>
+                </ul>
+
+                <ul class="footer-social-network">
+                    <li onclick="alert('@Ali_Ahmadi_Yekta')"><i class="fa fa-telegram social-media-item1"></i></li>
+                    <li><i class="fa fa-whatsapp social-media-item2"></i></li>
+                    <li><i class="fa fa-youtube-play social-media-item3"></i></li>
+                    <li onclick="alert('alimagicinvet@gmail.com')"><i class="fa fa-envelope-o social-media-item4"></i></li>
+                    <li><a href="https://github.com/ALI-MAGIC" target="_blank"><i class="fa fa-github social-media-item5"></i></a></li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+    <!-- persian version -->
+    <footer class="w-100 perLang" language="fa">
+        <section class="app footer-bg m-auto">
+            <section class="footer-content d-flex flex-wrap justify-content-between  footer-row">
+                <div class="footer-col">
+                    <img src="img/logo.png" alt="logo" class="logo">
+                    <p class="first-footer-col-p">برای دانلود عکس این رزومه روی کلمه اینجا کلیک کنید<a href="img/full-site.png" download="aay-resume" title="download">'اینجا'</a>, اگر که عکس آپدیت نشده است مرا مطلع کن</p>
+                    <br>
+                    <p class="first-footer-col-p">Copyright ©2023 All rights reserved | This template is made by <a href="https://github.com/ALI-MAGIC" class="text-light" target="_blank">"Ali-Magic"</a></p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>ابهامات</h3>
+                    <section>
+                        <h5>می خواهید همکاری کنیم؟</h5>
+                        <p>به من ایمیل ارسال کن</p>
+                    </section>
+                    <div class="line w-100"></div>
+                    <section>
+                        <h5>مشکلی در سایت مشاهده میکنید؟</h5>
+                        <p>به من ایمیل ارسال کن</p>
+                    </section>
+                </div>
+
+                <div class="footer-col">
+                    <h3>تاریخچه این سایت</h3>
+                    <section>
+                        <h5>ساخت شده در</h5>
+                        <p>2023/12/27</p>
+                    </section>
+                    <div class="line w-100"></div>
+                    <section>
+                        <h5>آخرین آپدیت</h5>
+                        <p>2023/12/27</p>
+                    </section>
+                </div>
+
+            <div class="line w-100"></div>
+
+            </section>
+
+            <nav class="footer-nav d-flex justify-content-between align-items-center  footer-row">
+                <ul class="footer-menu">
+                    <li>Terms & Condition</li>
+                    <li>Privacy policy</li>
+                    <li>Jobs advertising</li>
+                    <li>Contact us</li>
+                </ul>
+
+                <ul class="footer-social-network">
+                    <li onclick="alert('@Ali_Ahmadi_Yekta')"><i class="fa fa-telegram social-media-item1"></i></li>
+                    <li><i class="fa fa-whatsapp social-media-item2"></i></li>
+                    <li><i class="fa fa-youtube-play social-media-item3"></i></li>
+                    <li onclick="alert('alimagicinvet@gmail.com')"><i class="fa fa-envelope-o social-media-item4"></i></li>
+                    <li><a href="https://github.com/ALI-MAGIC" target="_blank"><i class="fa fa-github social-media-item5"></i></a></li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
+    
+    <script>
+        $('[language]').hide();
+        $('[language="en"]').show();
+        $('#language-switch').change(function () {
+        var language = $(this).val();
+        switch (language) {
+            case 'en':
+                $('[language]').hide();
+                $('[language="en"]').show();
+            break;
+            case 'fa':
+                $('[language]').hide();
+                $('[language="fa"]').show();
+            break;
+            default:
+                $('[language]').hide();
+                $('[language="en"]').show();
+            }
+        });
+    </script>
+
+</body>
+</html>
