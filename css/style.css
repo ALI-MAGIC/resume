@@ -72,6 +72,28 @@ a {
     color: #c76a00;
 }
 
+.header-menuFa {
+    display: flex;
+    justify-content: center;
+    margin: 33px 0;
+}
+
+.header-menuFa li {
+    list-style: none;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.header-menuFa li a {
+    color: #444;
+    font-size: 23px;
+    transition: .3s color ease-in-out;
+}
+
+.header-menuFa li a:hover {
+    color: #c76a00;
+}
+
 .first-header-menu-item a {
     color: #c76a00 !important;
 }
@@ -95,6 +117,28 @@ a {
 }
 
 .menu-burger-icon i:hover {
+    color: #8b4a00;
+}
+
+.menu-burger-iconFa {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    outline: none;
+    border: none;
+    font-size: 6vw;
+    cursor: pointer;
+    z-index: 1000;
+    background-color: transparent;
+}
+
+.menu-burger-iconFa i {
+    color: #c76a00;
+    transition: .4s color ease-in-out;
+}
+
+.menu-burger-iconFa i:hover {
     color: #8b4a00;
 }
 
