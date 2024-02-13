@@ -277,6 +277,10 @@ a {
     background-image: url(../img/project4.png);
 }
 
+.card-img-bg5 {
+    background-image: url(../img/project5.png);
+}
+
 .card-img-bg::before {
     position: absolute;
     left: 0;
